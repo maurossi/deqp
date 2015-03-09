@@ -222,7 +222,7 @@ NATIVE_LIBS				= [
 		#		  API		ABI
 		NativeLib(13,		"armeabi-v7a"),		# ARM v7a ABI
 		NativeLib(13,		"x86"),				# x86
-		NativeLib(21,		"arm64-v8a"),		# ARM64 v8a ABI
+		#NativeLib(21,		"arm64-v8a"),		# ARM64 v8a ABI
 	]
 ANDROID_JAVA_API		= "android-13"
 NATIVE_LIB_NAME			= "libdeqp.so"
@@ -250,7 +250,7 @@ def noneSafePathJoin (*components):
 # NDK paths
 ANDROID_NDK_PATH				= selectNDKPath()
 ANDROID_NDK_HOST_OS				= getNDKHostOsName(ANDROID_NDK_PATH)
-ANDROID_NDK_TOOLCHAIN_VERSION	= "r10c" # Toolchain file is selected based on this
+ANDROID_NDK_TOOLCHAIN_VERSION	= "r10d" # Toolchain file is selected based on this
 
 # Native code build settings
 CMAKE_GENERATOR			= selectByOS({
